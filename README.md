@@ -39,7 +39,7 @@ run this command to run this application
 ```npm start```
 
 * API 
-1. Login API
+1. Login API (you can sign up firstly in API no 4)
 ```
 POST /api/v1/login HTTP/1.1
 Host: 127.0.0.1:3000
