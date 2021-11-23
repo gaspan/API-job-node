@@ -26,8 +26,20 @@ var db = mysql.createPool({
   ``` 
   according to the installed mysql authentication
 
-* Database creation
+* Database creation 
 Create database wich name is "job"
+- type this comand on your mysql shell
+```
+CREATE TABLE `user` (
+  `id` bigint(20) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+```
 
 * Database initialization
 make sure you have run your mysql database
